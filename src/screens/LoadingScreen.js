@@ -16,8 +16,16 @@ export default function LoadingScreen(){
         width: '100%', 
         height: '100vh', 
         display: 'flex', 
+        flexDirection: 'column',
         alignItems: 'center', 
         justifyContent: 'center'
+    }
+
+    const loadingText = {
+        color: "white",
+        margin: "5px",
+        fontFamily: "monospace",
+        fontSize: "20px"
     }
 
     return (
@@ -25,6 +33,7 @@ export default function LoadingScreen(){
        <Lottie options={defaultOptions}
               height={200}
               width={200}/>
+        <p style={loadingText}>Loading...</p>      
     </div>
     );
     
