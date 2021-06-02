@@ -58,6 +58,19 @@ export default function HomeScreen({clickEvent}){
         borderRadius: "10px"
     }
 
+    const mouseEnters = (e) => {
+        let button = document.getElementById("start");
+        button.style.boxShadow = "inset 2px 2px 10px #16171d";
+        button.style.cursor="pointer";
+
+    }
+
+    const mouseLeaves = (e) => {
+        let button = document.getElementById("start");
+        button.style.boxShadow = "none";
+        button.style.backgroundColor = "#832e71";
+    }
+
     return (
         <div style={container}>
             <div className="row" >
@@ -78,7 +91,7 @@ export default function HomeScreen({clickEvent}){
                     </div>
                     <p style={link}>git/HidiAlgo/imageTranslator <FontAwesomeIcon icon={faCodeBranch} /> </p>
                         <p style={link}>hashan.mahesh01@gmail.com <FontAwesomeIcon icon={faEnvelope} /></p>
-                    <div style={button} onClick={() => clickEvent(true)}>
+                    <div style={button} onClick={() => clickEvent(true)} id="start" onMouseEnter={mouseEnters} onMouseOut={mouseLeaves}>
                         Let's start
                     </div>
                 </div>
