@@ -76,7 +76,7 @@ export default function HomeScreen({clickEvent}){
                             And contact me through my email if you have anything to say. :)
                         </p>
                     </div>
-                    <p style={link}>git/hidialgo/webimagetranslator <FontAwesomeIcon icon={faCodeBranch} /> </p>
+                    <p style={link}>git/HidiAlgo/imageTranslator <FontAwesomeIcon icon={faCodeBranch} /> </p>
                         <p style={link}>hashan.mahesh01@gmail.com <FontAwesomeIcon icon={faEnvelope} /></p>
                     <div style={button} onClick={() => clickEvent(true)}>
                         Let's start
